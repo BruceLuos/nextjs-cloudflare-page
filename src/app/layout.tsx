@@ -2,7 +2,13 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-export const runtime = "edge";
+// 边缘运行时
+// export const runtime = "edge";
+
+// nodejs 运行时
+export const runtime = "nodejs";
+// dynamic 将布局或页面的动态行为更改为完全静态或完全动态
+export const dynamic = "force-static"
 
 const inter = Inter({ subsets: ['latin'] })
 
